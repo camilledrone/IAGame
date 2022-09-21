@@ -7,6 +7,9 @@ enum message_type
 {
   Msg_HiHoneyImHome,
   Msg_StewReady,
+  Msg_BobIsEnteringTheSaloon,
+  Msg_IApologize,
+  Msg_Fight,
 };
 
 
@@ -21,6 +24,18 @@ inline std::string MsgToStr(int msg)
   case 1:
     
     return "StewReady";
+
+  case 2:
+
+      return "BobIsEnteringTheSaloon";
+
+  case 3:
+
+      return "IApologize";
+
+  case 4:
+
+      return "Fight";
 
   default:
 

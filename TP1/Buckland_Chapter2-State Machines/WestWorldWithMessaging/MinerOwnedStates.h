@@ -174,5 +174,36 @@ public:
 
 
 
+//------------------------------------------------------------------------
+//
+//  miner is in the saloon and fight with a drunkard there
+//  One out of two chances are that he will apologise, 
+// in which case the drunkard will go to sleep and Bob will go back to drinking.
+// if not, they'll continue to fight/
+//------------------------------------------------------------------------
+class FightWithDrunkard : public State<Miner>
+{
+private:
+
+	FightWithDrunkard() {}
+
+	//copy ctor and assignment should be private
+	FightWithDrunkard(const FightWithDrunkard&);
+	FightWithDrunkard& operator=(const FightWithDrunkard&);
+
+public:
+
+	//this is a singleton
+	static FightWithDrunkard* Instance();
+
+	virtual void Enter(Miner* miner);
+
+	virtual void Execute(Miner* miner);
+
+	virtual void Exit(Miner* miner);
+
+	virtual bool OnMessage(Miner* agent, const Telegram& msg);
+};
+
 
 #endif
