@@ -1,1 +1,2 @@
 C:\Users\camil\Documents\UQAC\IA\TP1\Buckland_Chapter2-State Machines\WestWorldWithMessaging\Debug\WestWorldWithMessaging.exe
+C:\Users\camil\Documents\UQAC\IAGame\TP1\Buckland_Chapter2-State Machines\WestWorldWithMessaging\Debug\WestWorldWithMessaging.exe
